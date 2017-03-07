@@ -1,0 +1,119 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+$font: "Lato", sans-serif;
+
+$primary-color: #59ABE3;
+$button-color: #9B59B6;
+$text-color: #E4F1FE;
+
+body
+{
+	background: $primary-color;
+	box-sizing: border-box;
+    color: $text-color;
+	font-family: $font;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+*,*:before,*:after {
+	box-sizing: inherit;
+}
+
+#wrap
+{
+	background: transparent url('../img/space.jpg') no-repeat center center;
+	background-size: cover;
+	display: flex;
+	margin: 0;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding-bottom: 56px;
+	width: 100%;
+}
+
+header
+{
+	float: none;
+	position: relative;
+	width: inherit;
+}
+
+#content {
+	float: none;
+	// Prevent them style on small resolutions
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+header, #page-content
+{
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	color: $text-color;
+	font-family: $font;
+	font-weight: 300;
+}
+
+h1
+{
+	font-size: 2em;
+}
+
+h2
+{
+	font-size: 1.5em;
+}
+
+h3
+{
+	font-size: 1.3em;
+}
+
+.highlight
+{
+    padding: 44px;
+
+    h1
+    {
+        margin: 0 0 44px 0;
+    }
+
+    h2
+    {
+        margin: 0;
+    }
+
+}
+
+.button
+{
+	color: $text-color;
+	display: inline-block;
+	background: $button-color;
+    border: 1px solid $button-color;
+	border-radius: 100px;
+    font-weight: 700;
+	padding: 8px 16px;
+	outline: none;
+	text-decoration: none;
+	text-transform: uppercase;
+    transition: background ease-in-out 0.4s, color ease-in-out 0.4s;
+
+    &:hover, &:focus
+    {
+        background: transparent;
+        color: $button-color;
+    }
+
+}
